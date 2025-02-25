@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popins",sans-serif;
+}
+header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top:35px;
+}
+.logo{
+    margin-left:155px;
+}
+ul li{
+   list-style: none;
+   display: inline;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;   
+}
+ul{
+    margin-left: 40px;
+    font-size: 18px;
+}
+input{
+    width: 380px;
+    height: 53px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.078);
+    margin-left: 55px;
+}
+::placeholder{
+    padding: 10px;
+    font-size: 17px;
+}
+.sect2{
+  margin-top: 30px;
+}
+header img:nth-of-type(3){
+    display: none;
+}
+.sect2 img:nth-of-type(3){
+    display: none;
+}
+.sect2 img:nth-of-type(4){
+    display: none;
+}
+.sect3{
+    background-color:#FAFAFA;
+    padding: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: -10px;
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.mini{
+    background-color:#EDEDED;
+    width: 160px;
+    height: 128px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.row2{
+    display: flex;
+    gap:35px;
+}
+.sect4{
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.new{
+    display: flex;
+    gap: 30px;
+    color:#8B8B8B;
+}
+.card1{
+    background-color:#F6F6F6;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+.card{
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap: 20px;
+}
+.card1 img:nth-of-type(1){
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.mikrodis{
+    position: relative;
+    background-color:#F6F6F6;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.mikrodis img:nth-of-type(1){
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+.sect6{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    gap:20px;
+}
+.serv{
+    color:#8B8B8B;
+    font-size: 14px;
+}
+.card1 button{
+    width: 183px; 
+    height: 48px;
+}
+.sect5 img:nth-of-type(2){
+    display: none;
+}
+.dis{
+    display:grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap:15px;
+}
+.mikrodis button{
+    width: 183px; 
+    height: 48px;
+}
+.sect8{
+    display: flex; 
+    flex-direction: row; 
+    gap:20px; padding: 90px; 
+    padding-left: 150px; 
+    padding-right: 150px; 
+    margin-top: -10px; 
+    justify-content: space-between;
+}
+.we{
+    font-size:15px;
+    width: 400px;
+}
+.sect7 img:nth-of-type(2){
+    display: none;
+}
+
+
+@media screen and (max-width:1200px) {
+    body{
+        width: 1200px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+     }
+     ul li{
+        display: none;
+     }
+     header img:nth-of-type(2){
+        display: none;
+     }
+     input{
+        display: none;
+     }
+     header img:nth-of-type(3){
+        display: block;
+     }
+     .sect3{
+        width: 1200px;
+        padding: 10px;
+     }
+     .mini{
+        background-color:#EDEDED;
+        width: 150px;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        font-size: 10px;
+    }
+    .row2{
+        display: flex;
+        gap:10px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,520px);
+        grid-template-rows: repeat(2,1fr);
+        gap:20px;
+    }
+    .sect4{
+        padding: 10px;
+    }
+    .dis{
+        display: grid;
+        grid-template-columns: repeat(2,520px);
+        grid-template-rows: repeat(2,1fr);
+        gap:15px;
+    }
+    .sect6{
+        padding: 10px;
+    }
+    .sect8{
+        width: 1300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        width: 800;
+    }    
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+     }
+     ul li{
+        display: none;
+     }
+     header img:nth-of-type(2){
+        display: none;
+     }
+     input{
+        display: none;
+     }
+     header img:nth-of-type(3){
+        display: block;
+     }
+     .sect3{
+        width: 1000px;
+     }
+     .mini{
+        background-color:#EDEDED;
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        font-size: 10px;
+    }
+    .row2{
+        display: flex;
+        gap:10px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,450px);
+        grid-template-rows: repeat(2,1fr);
+        gap:20px;
+    }
+    .sect4{
+        padding: 10px;
+    }
+    .dis{
+        display: grid;
+        grid-template-columns: repeat(2,450px);
+        grid-template-rows: repeat(2,1fr);
+        gap:15px;
+    }
+    .sect6{
+        padding: 10px;
+    }
+    .sect8{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        max-width: 375px;
+    }
+    header{
+       display: flex;
+       justify-content: space-between;
+       padding: 15px;
+    }
+    header img:nth-of-type(1){
+        margin-left: 0;
+    }
+    ul li{
+        display: none;
+    }
+    header img:nth-of-type(2){
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    header img:nth-of-type(3){
+        display: block;
+    }
+    .sect2 img:nth-of-type(3){
+        display: block;
+    }
+    .sect2 img:nth-of-type(4){
+        display: block;
+    }
+    .sect2 img:nth-of-type(1){
+        display: none;
+    }
+    .sect2 img:nth-of-type(2){
+        display: none;
+    }
+    .row{
+        display: flex;
+        justify-content: space-around;
+    }
+    .sect3{
+        padding: 15px;
+        padding-right: 20px;
+    }
+    .row2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap:10px;
+    }
+    .sect4{
+        padding: 10px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,170px);
+        grid-template-rows: repeat(2,300px);
+        gap:15px;
+    }
+    .card img:nth-of-type(2){
+        width: 100px;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .card1 button{
+        width: 100px;
+        height: 40px;
+        padding: 10px;
+    }
+    .sect5 img:nth-of-type(2){
+        display: block;
+    }
+    .sect5 img:nth-of-type(1){
+        display: none;
+    }
+    .dis{
+        display: grid;
+        grid-template-columns: repeat(2,170px);
+        grid-template-rows: repeat(2,300px);
+        gap:15px;
+    }
+    .mikrodis{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .mikrodis button{
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+    }
+    .dis img:nth-of-type(2){
+        width: 100px;
+    }
+    .sect6{
+        padding: 10px;
+    }
+    .sect7 img:nth-of-type(1){
+        display: none;
+    }
+    .sect7 img:nth-of-type(2){
+        display: block;
+    }
+    .sect8{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .column{
+        margin-left: 30px;
+    }
+    .we {
+        font-size: 15px;
+        width: 330px;
+    }
+    .column img:nth-of-type(1){
+        margin-left: 130px;
+    }
+    .column img:nth-of-type(2){
+        margin-left: 80px;
+    }
+}

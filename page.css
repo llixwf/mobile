@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "popins",sans-serif;
+}
+header{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top:35px;
+}
+.logo{
+    margin-left:155px;
+}
+ul li{
+   list-style: none;
+   display: inline;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;   
+}
+ul{
+    margin-left: 40px;
+    font-size: 18px;
+}
+.in{
+    width: 380px;
+    height: 53px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.078);
+    margin-left: 55px;
+}
+::placeholder{
+    padding: 10px;
+    font-size: 17px;
+}
+.sect2{
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.sect3{
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    gap:40px;
+}
+.serv{
+    color:#8B8B8B;
+    font-size: 14px;
+}
+.card1{
+    background-color:#F6F6F6;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+.card1 img:nth-of-type(1){
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+hr{
+    color: #8b8b8b5d;
+    opacity: 70%;
+}
+.left p{
+    margin-top: 13px;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brands img{
+    width: 30px;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 253px; 
+    height: 40px; 
+    border: 1.5px solid #8b8b8b5d; 
+    border-radius: 5px;
+    padding: 10px;
+}
+.row2{
+    margin-bottom: 25px;
+}
+.sr{
+    width: 275px;
+    height: 53px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.078);
+}
+.colus{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    color: black;
+}
+.ish{
+    display: flex;
+    align-items: center;
+}
+.colus{
+    display: none;
+}
+.colus.active{
+    display: block;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px; 
+    row-gap: 19px;
+}
+.left{
+    display: flex; 
+    flex-direction: column; 
+    gap:20px
+}
+.card button{
+    width: 183px; 
+    height: 48px;
+}
+.pig{
+    margin-top: 30px; 
+    margin-left: 290px; 
+    margin-bottom: 20px;
+}
+.sect8{
+    display: flex; 
+    flex-direction: row; 
+    gap:20px; padding: 90px; 
+    padding-left: 150px; 
+    padding-right: 150px; 
+    margin-top: -10px; 
+    justify-content: space-between;
+}
+.we{
+    font-size:15px;
+    width: 400px;
+}
+.ass{
+    margin-top:10px;
+}
+header img:nth-of-type(3){
+    display: none;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        max-width: 375px;
+    }
+    header{
+       display: flex;
+       justify-content: space-between;
+       padding: 20px;
+    }
+    header img:nth-of-type(1){
+        margin-left: 0;
+    }
+    ul li{
+        display: none;
+    }
+    header img:nth-of-type(2){
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    header img:nth-of-type(3){
+        display: block;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,160px);
+        gap:5px;
+        margin-left: -50px;
+        font-size: 13px;
+    }
+    .card img:nth-of-type(2){
+        width: 100px;
+    }
+    .card button{
+        width: 100px;
+        height: 40px;
+    }
+    .sect3{
+        padding: 10px;
+    }
+    .brands{
+       display: none;
+    }
+    .sect2{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .pig{
+        margin-left: 0px;
+    }
+    .sect8{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .column{
+        margin-left: 30px;
+    }
+    .we {
+        font-size: 15px;
+        width: 330px;
+    }
+    .column img:nth-of-type(1){
+        margin-left: 130px;
+    }
+    .column img:nth-of-type(2){
+        margin-left: 80px;
+    }
+    .rating{
+        position: absolute;
+        left:60px;
+        top:50px;
+        margin-top: 20px;
+    }
+    .ass{
+        margin-top: 50px;
+        margin-left:10px;
+    }
+}
